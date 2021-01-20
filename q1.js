@@ -3,7 +3,7 @@ function run() {
   const output = document.getElementById("output");
   let out = "";
   /**/
-  out = input.isArray;
+  out = Array.isArray(input);
   /**/
   output.innerText = out;
 }
