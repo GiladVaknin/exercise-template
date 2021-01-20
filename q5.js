@@ -3,12 +3,16 @@ function run() {
   const output = document.getElementById("output");
   let out = "";
   /**/
-  //   let arr = [1, 2, 3, 4, 5];
-  //   let arr2 = [];
+  let arr = ["mom", "dad", "brother", "sister"];
+  let family = "";
   for (let i = 0; i < arr.length; i++) {
-    arr2.push(arr[i]);
+    if (i < arr.length - 1) {
+      family += arr[i] + ",";
+    } else {
+      family += arr[i];
+    }
   }
-  console.log(arr2);
+  console.log(family);
   /**/
   output.innerText = out;
 }
